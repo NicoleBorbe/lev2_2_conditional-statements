@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lev2_2_conditional-statements</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <form onsubmit="return false">
+        <label for="air">AQI:&nbsp;<span id="wert"></span></label>
+        <div>
+            <input type="range" min="0" max="150" step="1.0" value="0" id="aqi" onchange="checkAirQuality()">
+        </div>
+        <h3>Level of health concern: <span id="concern"></span></h3>
+        <h3>Level of health effect: <span id="effect"></span></h3>
+    </form>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
